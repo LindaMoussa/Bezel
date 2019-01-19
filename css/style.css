@@ -149,6 +149,10 @@ section .textanimation::after{
 .tab-content button{
     font-size: 13px;
 }
+.readmore{
+    font-size: 11px !important;
+    font-weight: 500 !important;
+}
 section h3{
     font-size: 36px;
     font-weight: 900;
@@ -195,7 +199,7 @@ section h3{
     opacity: 1;  
 }
 .bg-img{
-    background-image: url(images/bg-image-26.jpg);
+    background-image: url('../images/bg-image-26.jpg');
     background-size: 100% 100%;
     background-attachment: fixed;
     height: auto;   
