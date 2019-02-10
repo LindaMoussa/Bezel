@@ -34,11 +34,13 @@ nav span ,.dot{
 }
 .bgimg h1
 { 
+/*
     animation-name: biggerfont;
     animation-duration: 1s;
     animation-direction: normal;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
+*/
 }
 .bgimg p{
     animation-name: biggerp;
@@ -56,18 +58,7 @@ nav span ,.dot{
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
-@keyframes biggerfont{
-    from{opacity: 0; font-size: 50px;}
-    to  { font-size: 100px;}
-}
-@keyframes biggerp{
-    from{opacity: 0; font-size: 3px;}
-    to  {font-size: 18px;}
-}
-@keyframes buttons{
-    from{opacity: 0; }
-    to  {opacity: 1;}
-}
+
 .overlay{   
     top: 0;
     left:0;
@@ -103,34 +94,7 @@ section .textanimation::after{
     animation-direction: reverse;
     animation-timing-function: ease-in-out;
 }
-@keyframes textanim{
-    0%{content: ' softwares|'}
-    5%{content: ' softwar|'}
-    10%{content: ' softwa|'}
-    15%{content: ' softw|'}
-    20%{content: ' sof|'}
-    25%{content: ' so|'}
-    30%{content: ' s|'}
-    35%{content: ' a|'}
-    40%{content: ' ap|'}
-    45%{content: ' app|'}
-    50%{content: ' apps|'}
-    55%{content: ' app|'}
-    60%{content: ' ap|'}
-    65%{content: ' a|'}
-    70%{content: ' we|'}
-    75%{content: ' web|'}
-    80%{content: ' webs|'}
-    85%{content: ' websi|'}
-    90%{content: ' websit|'}
-    95%{content: ' website|'}
-    99%{content: ' websites|'}
-    
-}
-.nav-pills .nav-link{
-    color: #1f1f1f;
-    font-size: 13px;  
-}
+
 .navbaritems a{
 /*    color: yellow !important; */
 }
@@ -272,7 +236,7 @@ ul li{
 .item-caption{
     font-family: 'Poppins', sans-serif;
     bottom:-5%;
-    left:25%;
+    left:20%;
     opacity: 0;
     transition: all .4s linear;
 }
@@ -319,4 +283,58 @@ span.bestvalue{
     top:-25%;
     left:40%;
     width: 15%;
+}
+@media(max-width:860px){
+    .slider-caption{
+        bottom: 10%;
+    }    
+.slider-caption h1{
+/*    margin-top: 80%;*/
+    font-size: 120% !important;
+    font-weight: 900;
+}
+.slider-caption p{
+    font-size: 120%;
+    font-weight: 500;        
+}
+}
+@keyframes biggerfont{
+    from{opacity: 0; font-size: 50px;}
+    to  { font-size: 100px;}
+}
+@keyframes biggerp{
+    from{opacity: 0; font-size: 3px;}
+    to  {font-size: 18px;}
+}
+@keyframes buttons{
+    from{opacity: 0; }
+    to  {opacity: 1;}
+}
+@keyframes textanim{
+    0%{content: ' softwares|'}
+    5%{content: ' softwar|'}
+    10%{content: ' softwa|'}
+    15%{content: ' softw|'}
+    20%{content: ' sof|'}
+    25%{content: ' so|'}
+    30%{content: ' s|'}
+    35%{content: ' a|'}
+    40%{content: ' ap|'}
+    45%{content: ' app|'}
+    50%{content: ' apps|'}
+    55%{content: ' app|'}
+    60%{content: ' ap|'}
+    65%{content: ' a|'}
+    70%{content: ' we|'}
+    75%{content: ' web|'}
+    80%{content: ' webs|'}
+    85%{content: ' websi|'}
+    90%{content: ' websit|'}
+    95%{content: ' website|'}
+    99%{content: ' websites|'}
+    
+}
+.nav-pills .nav-link{
+    color: #1f1f1f;
+    font-size: 13px;  
 }
